@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Heckman - Autonomous Robot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Ashley Heckman</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../coursework.html">Coursework</a></li>
+                <li class="nav-item"><a class="nav-link text-white active" href="../projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <section>
+            <p>To learn more about this project, visit the <a href="https://pages.github.coecis.cornell.edu/agh93/agh93.github.io/index.html" target="_blank">project website</a>.
+            </p>
+
+            <h2>Autonomous Maze-Navigating Robot</h2>
+
+            <p>I developed a robot capable of navigating through a maze and detecting treasures. The purpose of this robot is not to escape the maze; its sole purpose is to find the treasures hidden in the maze.
+            </p>
+
+            <h5>Navigation</h5>
+            <p>The robot uses depth first search (DFS) to navigate through the maze. It detects walls through ultrasonic sensors pointed at the front, left, and right side of the robot.
+            </p>
+
+            <h5>Treasure Detection</h5>
+            <p>The treasures are rapidly blinking IR LEDs. The robot needs to detect that these treasures are present, then send their frequency back to the base station.
+            </p>
+            <p>
+                The robot detects the lights and their frequencies with phototransistors. It sends the measured frequency back to the base station via RF communication.
+            </p>
+
+        </section>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Heckman - Plant Watering System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Ashley Heckman</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../coursework.html">Coursework</a></li>
+                <li class="nav-item"><a class="nav-link text-white active" href="../projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <section>
+            <p>To learn more about this project, visit the <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Spring2023_Projects/2%20Friday%20May%2012/2%20Automatic%20Plant%20Watering/W_agh93_mib57/index.html" target="_blank">project website</a> or
+                watch the <a href="https://youtu.be/B8IPbSAbixg" target="_blank">demonstration video</a>.
+            </p>
+
+            <h2>Automatic Plant Watering System</h2>
+
+            <p>I developed a system capable of automatically watering a plant. The system monitors the plant's soil moisture, the air temperature and humidity, and the ambient light value. It displays these values on the home screen, along with the time
+                that the plant was last watered. The user may select from 3 watering modes: manual, moisture sensing, and interval.
+            </p>
+
+            <h5>Manual Mode</h5>
+            <p>The user must click the on/off button to start and stop the water. There is no automatic watering in this mode.
+            </p>
+
+            <h5>Moisture Sensing Mode</h5>
+            <p>The system first calculates the target soil moisture value. It begins by prompting the user for their plant type, then their specific plant. If the user's specific plant is in the database, the system uses that value as the target. Otherwise,
+                the system uses the average value of all of the plants in the category as the target. The user may also specify their own target value.
+            </p>
+            <p>Once the target value is selected, the system continuously checks the soil moisture level. If the moisture level is below the target value, the water pump is turned on until the moisture level is at the target value.
+            </p>
+
+            <h5>Interval Mode</h5>
+            <p>The user selects the frequency and duration at which they want the plant watered. The system automatically turns the water on and off at the specified frequency and duration.
+            </p>
+
+        </section>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

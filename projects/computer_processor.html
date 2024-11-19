@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Heckman - Computer Processor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Ashley Heckman</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../coursework.html">Coursework</a></li>
+                <li class="nav-item"><a class="nav-link text-white active" href="../projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="../resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <section>
+            <p>To learn more about this project, view the <a href="../files/multiplier_report.pdf" target="_blank">multiplier report</a>, the <a href="../files/processor_report.pdf" target="_blank">processor report</a>, the <a href="../files/cache_report.pdf"
+                    target="_blank">cache report</a>, or the
+                <a href="../files/final_report.pdf" target="_blank">final report</a>.
+            </p>
+
+            <h2>Computer Processor</h2>
+
+            <p>I developed a single-core and multi-core computer processor capable of running basic programs.
+
+                <br><br>I bagan by implementing both a fixed-latency and variable-latency iterative integer multiplier. The datapath for the variable-latency multiplier is shown below.
+            </p>
+
+            <img src="..\imgs\proc_multiplier.png" alt="Multiplier Datapath" style="width:50%" class="center">
+
+            <p><br>Next, I implemented both a stalling and a fully bypassed pipelined processor. This processor uses the previously implemented multiplier. The datapath for the fully bypassed processor is shown below.
+            </p>
+
+            <img src="..\imgs\proc_processor.png" alt="Processor Datapath" style="width:80%" class="center">
+
+            <p><br>I then implemented both a direct-mapped and a 2-way-set-associative cache. The datapath for the set-associative cache is shown below.
+            </p>
+
+            <img src="..\imgs\proc_cache.png" alt="Multiplier Datapath" style="width:70%" class="center">
+
+            <p><br>Finally, I put everything together and created a single-core and multi-core processor. The single-core processor is made up of an instruction cache, data cache, and processor. The multicore system is made up of four private instruction
+                caches, a four-banked shared data cache, four processors, and four ring networks.
+            </p>
+
+        </section>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

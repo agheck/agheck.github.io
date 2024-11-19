@@ -1,0 +1,263 @@
+/* General Styles */
+
+body {
+    background-color: #f9f9f9;
+    /* Light grey background for the body */
+    font-family: Arial, sans-serif;
+    /* Set default font for better readability */
+    line-height: 1.6;
+    /* Improve line spacing */
+}
+
+
+/* Headings */
+
+h2 {
+    margin-top: 2rem;
+    /* Space above the heading */
+    color: #343a40;
+    /* Dark grey color for better contrast */
+    font-weight: bold;
+    /* Bold text for emphasis */
+}
+
+
+/* Navigation Styles */
+
+.nav-item a.active {
+    color: white;
+    /* Active item text color */
+    font-weight: bold;
+    /* Make active item text bold */
+}
+
+.nav-pills .nav-link {
+    border-radius: 0.5rem;
+    /* Rounded corners for nav links */
+    margin-right: 0.5rem;
+    /* Space between nav links */
+    color: #343a40;
+    /* Default text color */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition effects */
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #343a40;
+    /* Change background on hover */
+    color: white;
+    /* Change text color on hover */
+    transform: scale(1.05);
+    /* Slightly increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow effect on hover */
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0056b3;
+    /* Active link background color */
+    color: white;
+    /* Active link text color */
+}
+
+
+/* Resume Container */
+
+.resume-container {
+    height: 90vh;
+    /* Adjust height for resume display */
+}
+
+
+/* Iframe Styles */
+
+iframe {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    border: none;
+    /* Remove default border */
+}
+
+
+/* Coursework Navigation Styles */
+
+.nav-pills-coursework .nav-link {
+    border-radius: 0.5rem;
+    /* Rounded corners for coursework nav links */
+    margin-right: 0.5rem;
+    /* Space between coursework nav links */
+    color: #343a40;
+    /* Default text color */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition effects */
+}
+
+.nav-pills-coursework .nav-link:hover {
+    background-color: #343a40;
+    /* Change background on hover */
+    color: white;
+    /* Change text color on hover */
+    transform: scale(1.05);
+    /* Slightly increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow effect on hover */
+}
+
+.nav-pills-coursework .nav-link.active {
+    background-color: #0056b3;
+    /* Active link background color */
+    color: white;
+    /* Active link text color */
+}
+
+
+/* Course Styles */
+
+.course-description {
+    font-size: 0.9rem;
+    /* Smaller font for course descriptions */
+    color: #6c757d;
+    /* Muted grey color for descriptions */
+}
+
+.course-code {
+    font-weight: bold;
+    /* Bold course code */
+    color: #000;
+    /* Black color for course codes */
+}
+
+.course-name {
+    font-weight: bold;
+    /* Bold course names */
+    color: #585656;
+    /* Darker grey for course names */
+}
+
+.course-list {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.course-item {
+    margin-bottom: 10px;
+    /* Add spacing between items */
+    padding: 10px;
+    /* Add padding for better click area */
+    border: 1px solid #e0e0e0;
+    /* Add a light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth hover effect */
+}
+
+.course-item:hover {
+    background-color: #f8f9fa;
+    /* Light background on hover */
+}
+
+
+/* Project Cards */
+
+.card {
+    height: 500px;
+    /* Fixed height for all cards */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    text-decoration: none;
+    /* Remove underline */
+    color: #212529;
+    /* Set a consistent text color */
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition for the shadow */
+    border: 1px solid transparent;
+    /* Default border */
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    /* Highlight with a shadow on hover */
+    color: #212529;
+    /* Maintain text color on hover */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.card img {
+    width: 100%;
+    /* Ensure image fits the card */
+    height: 200px;
+    /* Fixed height for the image */
+    object-fit: contain;
+    /* Maintain aspect ratio, center the image */
+    margin: auto;
+    /* Center image vertically if shorter */
+}
+
+.card-body {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: flex-start;
+    /* Align content to the top */
+    flex-grow: 1;
+    /* Allow the body to grow */
+}
+
+.card-title {
+    font-weight: bold;
+    /* Bold title */
+    text-align: center;
+    /* Center align title */
+}
+
+
+/* Sidebar styles */
+
+aside {
+    background-color: #f8f9fa;
+    /* Light background for sidebar */
+    padding: 15px;
+    /* Padding for better spacing */
+    border-right: 1px solid #e0e0e0;
+    /* Optional: right border for separation */
+    position: sticky;
+    /* Make the sidebar sticky */
+    top: 0;
+    /* Stick to the left of the viewport */
+    height: calc(100vh - 4rem);
+    /* Full height of the viewport minus header height */
+    overflow-y: auto;
+    /* Enable scrolling for the sidebar if content overflows */
+}
+
+
+/* Main content area */
+
+.main-content {
+    padding: 15px;
+    /* Padding for main content */
+}
+
+
+/* Ensure main content takes full height of the container */
+
+.row {
+    height: 100%;
+    /* Make the row full height */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

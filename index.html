@@ -1,70 +1,49 @@
-﻿<!DOCTYPE html>
-<html lang =  "en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Ashley Heckman's Website</title>
-  <meta charset = "UTF-8">
-  <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-  <link href = "style.css" rel="stylesheet" type="text/css">
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Heckman - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Ashley Heckman</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="coursework.html">Coursework</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="resume.html">Resume</a></li>
+            </ul>
+        </nav>      
+    </header>
 
-  <div id = "everything">
+    <main class="container my-4 text-center">
+        <section>
+            <img src="imgs/profilepic.jpg" alt="Profile Picture" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+            <h2>Welcome to My Website</h2>
+            <p>I'm an M.Eng. student at Cornell University studying electrical and computer engineering. I'm passionate about embedded systems, 
+                FPGAs, and computer architecture. I'm always eager to learn more and to apply my knowledge towards various projects.
+            </p>
+        </section>
 
-    <div id = "main-title">
-      Ashley Heckman
-    </div>
+        <section class="mt-4">
+            <h3>Contact Me</h3>
+            <p>
+                <a href="mailto:agh93@cornell.edu">agh93@cornell.edu</a> | 
+                <a href="https://www.linkedin.com/in/ashley-heckman" target="_blank">LinkedIn</a>
+            </p>
+        </section>
+    </main>
 
-    <div id = "navbar">
-      Home | 
-      <a href = "coursework.html">Coursework</a> |
-      <a href = "projects.html">Projects</a>
-    </div>
-
-    <br>
-    <div id = "all-but-title">
-
-      <div id = "subtitle">
-        About Me
-      </div>
-
-      <div class = "row">
-        <div class = "column left">
-          <img src="profilepic.jpg" alt="Ashley Picture" style='height: 100%; width: 100%; object-fit: contain'>
-        </div>
-
-        <div class = "column right">
-          <div class = "main-text">
-            I am a senior at Cornell University studying electrical and computer engineering. 
-            I'm expecting to graduate with a B.S. in May 2024 and a M.Eng. in December 2024. 
-            I'm part of the computing systems subteam for the Cornell Hyperloop project team. 
-            I am always eager to learn more and to apply my knowledge towards various projects.
-
-            <br><br>
-            <b>Contact Information</b><br>
-            Email: agh93@cornell.edu <br>
-            Phone: (517) 715-3414 <br><br>
-
-            <b>Resume</b><br>
-            [<a href="Resume 4-2024.pdf" class = "image fit">Open in Browser</a>]
-            <br><br>
-
-            <b>Linkedin</b><br>
-            <a href="http://www.linkedin.com/in/ashley-heckman-6b3848224">www.linkedin.com/in/ashley-heckman-6b3848224</a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
+    <footer class="text-center py-3">
+        <p></p>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
